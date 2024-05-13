@@ -1,0 +1,243 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+div,
+button {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+button {
+  padding: 1.2rem 1.6rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #444445;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #5e5e5e;
+}
+
+button:active {
+  background-color: #444445;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100%;
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(to bottom, #4a97dc, #4f61c1);
+}
+
+.bg-purple {
+  color: white;
+  background-color: #4f61c1;
+}
+
+.bg-white {
+  padding: 0 10rem 10rem;
+}
+
+.intro-box {
+  padding: 10rem 10rem 0;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.landing-intro {
+  max-width: 500px;
+  color: white;
+  width: 40%;
+}
+
+.landing-intro-img {
+  max-width: 500px;
+  width: 40%;
+}
+
+.landing-intro-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.landing-intro-mid {
+  padding: 4rem 4rem 8rem;
+  text-align: center;
+}
+
+.landing-intro-bottom {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.landing-icon-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.landing-icon-box {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+.landing-icon {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.landing-icon i {
+  color: #4f61c1;
+  line-height: 6rem;
+}
+
+.landing-icon-box h4 {
+  margin-top: 1rem;
+}
+
+.portfolio-box-list {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.portfolio-box {
+  float: left;
+  position: relative;
+  width: 50%;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  border: 0rem solid white;
+  transition: border 0.2s;
+}
+
+.portfolio-overlay:hover {
+  border: 2rem solid white;
+}
+
+.portfolio-img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+}
+
+.portfolio-box-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4rem;
+  color: white;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon-box {
+  margin: 1.6rem;
+  cursor: pointer;
+}
+
+.social-icon-box i {
+  font-size: 2.4rem;
+  background-color: #4f61c1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  padding: 1rem;
+  text-align: center;
+  line-height: 3rem;
+  color: white;
+}
+
+.copyright-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .intro-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 5rem 0;
+  }
+
+  .landing-intro {
+    text-align: center;
+    min-height: 0%;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .landing-intro-img {
+    width: 100%;
+  }
+
+  .landing-icon-box {
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+
+  .bg-white {
+    padding: 0 5rem 5rem;
+  }
+
+  .portfolio-box-list {
+    padding: 0;
+    margin: 4rem 0 4rem;
+  }
+
+  .portfolio-box {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .landing-icon-box {
+    width: 100%;
+  }
+}
